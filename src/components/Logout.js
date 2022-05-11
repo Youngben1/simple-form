@@ -15,11 +15,14 @@ const Logout = () => {
   return (
     <div className="logout">
       <h1>
-        Welcome <span className="user_name">{user.name}</span>
+        Welcome <span className="user_name">{user.username}</span>
       </h1>
-      <botton className="logout_btn" onClick={(e) => handleLogout(e)}>
+      <button className="logout_btn" onClick={(e) => handleLogout(e)}>
         Logout
-      </botton>
+      </button>
+      <button className="diff_userbtn">
+        <a href="/">Sign In with Different User</a>
+      </button>
     </div>
   );
 };
